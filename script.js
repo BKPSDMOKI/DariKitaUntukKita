@@ -33,7 +33,7 @@
     data.append(C.ENTRY.topik, $("topik").value);
     data.append(C.ENTRY.isi, $("isi").value.trim());
     if ($("harapan").value.trim()) data.append(C.ENTRY.harapan, $("harapan").value.trim());
-    data.append(C.ENTRY.setuju, "Ya");
+    data.append(C.ENTRY.setuju, "Saya menyatakan masukan ini bebas dari unsur SARA dan tidak menyudutkan pihak tertentu."); // harus sama persis dengan teks kotak centang di Google Form
 
     $("btn").disabled = true;
     fetch(C.FORM_ACTION, { method: "POST", mode: "no-cors", body: data })

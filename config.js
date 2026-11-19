@@ -15,6 +15,9 @@ window.CONFIG = {
     setuju:  "entry.2060580260"
   },
 
+  // Alamat CSV dari tab "Tayang" di Google Sheets
+  SHEET_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9Zgwy-jGhgO_LNbIXQxeNNnaGRGgTyccs51kEyezj3fkQYZnsYdpkpxJzuR9bY09Wdd8lD4JAjlw-/pub?gid=239752770&single=true&output=csv",
+
   // Jeda antar kiriman dari perangkat yang sama (detik), mencegah spam
   COOLDOWN_SECONDS: 30
 };

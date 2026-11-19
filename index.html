@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suara Anda untuk BKPSDM</title>
+<meta name="description" content="Saran, kritik membangun, dan pertanyaan anonim untuk BKPSDM.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Suara Anda untuk BKPSDM</h1>
+    <p>Saran, kritik membangun &amp; pertanyaan. Anonim, tanpa login.</p>
+  </header>
+
+  <section class="card rules">
+    <h2>Sebelum mengirim, mohon diperhatikan</h2>
+    <ul>
+      <li>Identitas Anda <strong>tidak dicatat</strong>. Silakan bicara dengan jujur dan santun.</li>
+      <li>Tidak memuat unsur <strong>SARA</strong> (suku, agama, ras, antargolongan).</li>
+      <li>Tidak menyudutkan atau menyebut pribadi/pegawai tertentu. Fokus pada sistem, proses, atau program.</li>
+      <li>Sertakan harapan atau solusi bila ada, agar masukan lebih mudah ditindaklanjuti.</li>
+    </ul>
+  </section>
+
+  <form id="f" class="card" novalidate autocomplete="off">
+    <label for="jenis">Jenis masukan</label>
+    <select id="jenis" required>
+      <option value="">Pilih...</option>
+      <option>Pertanyaan</option>
+      <option>Saran</option>
+      <option>Kritik membangun</option>
+      <option>Apresiasi</option>
+    </select>
+
+    <label for="topik">Topik</label>
+    <select id="topik" required>
+      <option value="">Pilih...</option>
+      <option>Pengembangan kompetensi</option>
+      <option>Layanan kepegawaian</option>
+      <option>Karier &amp; mutasi</option>
+      <option>Tata kelola pegawai/kantor BKPSDM</option>
+      <option>Webinar NGOPI</option>
+      <option>Lainnya</option>
+    </select>
+
+    <label for="isi">Isi masukan Anda</label>
+    <textarea id="isi" maxlength="2000" required></textarea>
+    <div class="count"><span id="c1">0</span>/2000</div>
+
+    <label for="harapan">Harapan atau solusi yang diusulkan <span class="hint">(opsional)</span></label>
+    <textarea id="harapan" maxlength="2000"></textarea>
+
+    <!-- jebakan spam: orang tidak melihat kolom ini, bot sering mengisinya -->
+    <div class="hp" aria-hidden="true"><input type="text" id="website" tabindex="-1" autocomplete="off"></div>
+
+    <label class="check"><input type="checkbox" id="setuju">
+      <span>Saya menyatakan masukan ini bebas dari unsur SARA dan tidak menyudutkan pihak tertentu.</span></label>
+
+    <button type="submit" id="btn">Kirim secara anonim</button>
+    <div id="msg" class="msg" role="status" aria-live="polite"></div>
+  </form>
+
+  <footer>Masukan Anda dibaca untuk membangun BKPSDM dan SDM di dalamnya.</footer>
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

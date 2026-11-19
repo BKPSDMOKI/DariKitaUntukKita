@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suara Peserta | BKPSDM</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📣</text></svg>">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="hasil.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header>
+    <h1>Suara Peserta</h1>
+    <p>Masukan yang sudah ditinjau untuk membangun BKPSDM dan SDM di dalamnya.</p>
+  </header>
+
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Cari kata kunci...">
+    <button id="btnPresent" class="ghost">Layar penuh</button>
+    <button id="btnReload" class="ghost">Muat ulang</button>
+  </div>
+
+  <section id="stats" class="stats"></section>
+  <div id="chips" class="chips"></div>
+  <div id="state" class="state"></div>
+  <section id="grid" class="grid"></section>
+  <footer id="upd"></footer>
+</div>
+
+<div id="stage" class="stage" hidden>
+  <button id="btnExit" class="exit">Keluar (Esc)</button>
+  <div id="stageCard"></div>
+  <div id="stageNav" class="stage-nav"></div>
+</div>
+
+<script src="config.js"></script>
+<script src="hasil.js"></script>
+</body>
+</html>
